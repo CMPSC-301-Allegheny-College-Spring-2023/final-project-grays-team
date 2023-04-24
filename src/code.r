@@ -49,7 +49,8 @@ View(data)
 
 # Add your code here to address the four main research questions which are noted in the README.md file. 
 
-# TODO
+model <- lm( Ladder.score ~ Standard.error.of.ladder.score + upperwhisker + lowerwhisker + Logged.GDP.per.capita + Social.support + Healthy.life.expectancy + Freedom.to.make.life.choices + Generosity + Perceptions.of.corruption, data=data)
+summary(model)
 
 ################################################
 
