@@ -33,11 +33,15 @@ cat("\014") # clear the console
 # is coded correctly without typographical errors.
 
 library(dplyr)
+library(dslabs)
 library(tidyverse)
+library(ggplot2)
 
 ##### Begin by loading your csv file.
-fname <- file.choose()
+
 data <- read.table(file.choose(), header = TRUE, sep = ",")
+
+##### Begin by loading your csv file.
 
 # View the data set.
 
