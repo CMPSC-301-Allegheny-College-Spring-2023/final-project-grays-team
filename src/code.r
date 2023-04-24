@@ -4,15 +4,14 @@
 
 # Names: 
 print("The names of this group are the following.")
-print("Add Your Name Here")
-print("Add Your Name Here")
-print("Add Your Name Here")
-print("Add Your Name Here")
+print("Tugi Gantulga")
+print("Brenden Gray")
+print("Nic Ingerson")
 
 ################################################
 
 print("The name of this group is the following.")
-print("Add Your Name Here")
+print("Compsci-goblins")
 
 rm(list = ls()) # clear out the variables
 # from memory to make a clean execution of the code.
@@ -52,6 +51,26 @@ View(data)
 model <- lm( Ladder.score ~ Standard.error.of.ladder.score + Logged.GDP.per.capita + Social.support + Healthy.life.expectancy + Freedom.to.make.life.choices + Generosity + Perceptions.of.corruption, data=data)
 summary(model)
 
+
+# Seeing the relationship between GDP per capita and the happiness index score WITHOUT country names
+ggplot() +
+  geom_point(data = data, aes(x = Logged.GDP.per.capita, y = Ladder.score), color = "blue") +
+  xlab("Logged GDP per capita") +
+  ylab("Happiness index") +
+  ggtitle("Correlation between GDP per capita and the happiness index score (all countries)")
+
+
+# Seeing the relationship between GDP per capita and the happiness index score WITH country names
+
+
+ggplot(data, aes(x = Logged.GDP.per.capita, y = Ladder.score)) +
+  geom_point(color = "blue") +
+  geom_text(aes(label = Country.name), size = 3, hjust = 0, vjust = 0) +
+  xlab("Logged GDP per capita") +
+  ylab("Happiness index") +
+  ggtitle("Correlation between GDP per capita and the happiness index score (all countries)")
+
+# TODO choose five countries that are developed, choose 5 that are average and choose 5 that are poor and plot them
 ################################################
 
-# Note: Did leave your name to the top of this script?
+# TODO we can create more plots using the same graph or different and use other variables
