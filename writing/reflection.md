@@ -4,15 +4,19 @@
 
 ## Names of all members 
 
-Add Your Name Here
+Brenden Gray
 Add Your Name Here
 Add Your Name Here
 
 ## Group Name
 
-Add Your Name Here
+grays-team
 
 ## Dataset reference
+
+http://eprints.lse.ac.uk/47487/1/World%20happiness%20report%28lsero%29.pdf
+
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1796590
 
 ## In clear and meaningful language, discuss your three (foundational) questions.
 
