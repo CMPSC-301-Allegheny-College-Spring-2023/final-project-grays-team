@@ -70,7 +70,19 @@ ggplot(data, aes(x = Logged.GDP.per.capita, y = Ladder.score)) +
   ylab("Happiness index") +
   ggtitle("Correlation between GDP per capita and the happiness index score (all countries)")
 
-# TODO choose five countries that are developed, choose 5 that are average and choose 5 that are poor and plot them
-################################################
+# choose five countries that are developed, choose 5 that are average and choose 5 that are poor and plot them
+# choose five countries that are developed, choose 5 that are average and choose 5 that are poor and plot them
+# Finland Luxembourg and other countries
+
+some_countries <- data[c(1,5,9,15,30,36,47,64,83,100,110,126,132,137),]
+
+ggplot(some_countries, aes(x = Logged.GDP.per.capita, y = Ladder.score)) +
+  geom_point(color = "red") +
+  geom_text(aes(label = Country.name), hjust = 0, vjust = 0) +
+  xlab("Logged GDP per capita") +
+  ylab("Happiness index") +
+  ggtitle("Correlation between GDP per capita and the happiness index score (few countries)")
+
+
 
 # TODO we can create more plots using the same graph or different and use other variables
