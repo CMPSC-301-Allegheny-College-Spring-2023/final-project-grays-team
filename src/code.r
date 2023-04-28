@@ -75,7 +75,7 @@ ggplot(data, aes(x = Logged.GDP.per.capita, y = Ladder.score)) +
 
 # Finland Luxembourg and other countries
 
-some_countries <- data[c(1,5,9,15,30,36,47,64,83,100,110,126,132,137),]
+some_countries <- data[c(1,5,9,15,30,36,47,64,83,100,110,126,129,137),]
 
 ggplot(some_countries, aes(x = Logged.GDP.per.capita, y = Ladder.score)) +
   geom_point(color = "red") +
@@ -101,27 +101,20 @@ ggplot(data, aes(x = Logged.GDP.per.capita, y = Ladder.score)) +
   ylab("Happiness index") +
   ggtitle("Correlation between GDP per capita and the happiness index score (all countries)")
 
+
+
+
 # GDP and Healthy Life Expectancy
 
 # Few Countries
 
-gdp_life_expectancy_countries_few <- data[c(1,5,9,15,30,36,47,64,83,100,110,126,132,137),]
-
-ggplot(gdp_life_expectancy_countries_few, aes(x = Logged.GDP.per.capita, y = Healthy.life.expectancy)) +
+ggplot(some_countries, aes(x = Logged.GDP.per.capita, y = Healthy.life.expectancy)) +
   geom_point(color = "red") +
   geom_text(aes(label = Country.name), hjust = 0, vjust = 0) +
   xlab("Logged GDP per capita") +
   ylab("Healthy lide expectancy") +
   ggtitle("Correlation between GDP per capita and healthy life expectancy (few countries)")
 
-# All Countries (with labels)
-
-ggplot(data, aes(x = Logged.GDP.per.capita, y = Healthy.life.expectancy)) +
-  geom_point(color = "blue") +
-  geom_text(aes(label = Country.name), hjust = 0, vjust = 0) +
-  xlab("Logged GDP per capita") +
-  ylab("Healthy lide expectancy") +
-  ggtitle("Correlation between GDP per capita and healthy life expectancy (all countries)")
 
 # All Countries (without labels)
 
@@ -131,4 +124,37 @@ ggplot(data, aes(x = Logged.GDP.per.capita, y = Healthy.life.expectancy)) +
   ylab("Healthy lide expectancy") +
   ggtitle("Correlation between GDP per capita and healthy life expectancy (all countries)")
 
-# TODO we can create more plots using the same graph or different and use other variables
+# we can create more plots using the same graph or different and use other variables
+
+
+# Generosity vs Happiness
+
+ggplot(some_countries, aes(x = Generosity, y = Ladder.score)) +
+  geom_point(color = "blue") +
+  geom_text(aes(label = Country.name), hjust = 0, vjust = 0) +
+  xlab("Generosity") +
+  ylab("Happiness index") +
+  ggtitle("Correlation between Generosity and happiness index (few countries)")
+
+ggplot(data = data , aes(x = Generosity, y = Ladder.score)) +
+  geom_point(color = "blue") +
+  xlab("Generosity") +
+  ylab("Happiness index") +
+  ggtitle("Correlation between Generosity and Happiness index (all countries)")
+
+# Freedom vs happiness
+
+ggplot(data = data , aes(x = Freedom.to.make.life.choices, y = Ladder.score)) +
+  geom_point(color = "blue") +
+  xlab("Freedom to make life choices") +
+  ylab("Happiness index") +
+  ggtitle("Correlation between Freedom to make life choices and Happiness index (all countries)")
+
+
+ggplot(data = some_countries , aes(x = Freedom.to.make.life.choices, y = Ladder.score)) +
+  geom_point(color = "blue") +
+  geom_text(aes(label = Country.name), hjust = 0, vjust = 0) +
+  xlab("Freedom to make life choices") +
+  ylab("Happiness index") +
+  ggtitle("Correlation between Freedom to make life choices and Happiness index (few countries)")
+
