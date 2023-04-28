@@ -159,8 +159,7 @@ ggplot(data = some_countries , aes(x = Freedom.to.make.life.choices, y = Ladder.
   ggtitle("Correlation between Freedom to make life choices and Happiness index (few countries)")
 
 
-
-#Health Life expectancy vs happiness
+# Health Life expectancy vs happiness
 
 ggplot(data = data , aes(x = Healthy.life.expectancy, y = Ladder.score)) +
   geom_point(color = "blue") +
@@ -175,3 +174,18 @@ ggplot(data = data , aes(x = Healthy.life.expectancy, y = Ladder.score)) +
   ylab("Happiness index") +
   ggtitle("Correlation between Health life expectancy and Happiness index (all countries)")
 
+#Social SUpport
+
+ggplot(data = some_countries , aes(x = Social.support, y = Ladder.score)) +
+  geom_point(color = "blue") +
+  geom_text(aes(label = Country.name), hjust = 0, vjust = 0) +
+  xlab("Social support") +
+  ylab("Happiness index") +
+  ggtitle("Correlation between Social Support and Happiness index (few countries)")
+
+
+ggplot(data = data , aes(x = Social.support, y = Ladder.score)) +
+  geom_point(color = "blue") +
+  xlab("Social Support") +
+  ylab("Happiness index") +
+  ggtitle("Correlation between Social Support and Happiness index (all countries)")
