@@ -48,7 +48,7 @@ View(data)
 
 # Add your code here to address the four main research questions which are noted in the README.md file. 
 
-model <- lm( Ladder.score ~ Standard.error.of.ladder.score + Logged.GDP.per.capita + Social.support + Healthy.life.expectancy + Freedom.to.make.life.choices + Generosity + Perceptions.of.corruption, data=data)
+model <- lm( Ladder.score ~ Logged.GDP.per.capita + Social.support + Healthy.life.expectancy + Freedom.to.make.life.choices + Generosity + Perceptions.of.corruption, data=data)
 summary(model)
 
 
