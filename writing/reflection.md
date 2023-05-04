@@ -13,6 +13,7 @@ Tuguldur Gantulga
 grays-team
 
 ## Dataset reference
+https://www.kaggle.com/datasets/ajaypalsinghlo/world-happiness-report-2023
 
 http://eprints.lse.ac.uk/47487/1/World%20happiness%20report%28lsero%29.pdf
 
@@ -24,7 +25,7 @@ https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1796590
 
 For each question, be sure to describe and discuss; the method, the code, the results and the conclusions of your group. This work will take about the same time as two labs.
 
-The motivation behind these questions is that we wanted to find the if the variables we chose are good indicators or not. Does having more material and living in a developed country produce more happiness? Moreover, we wanted out classmatess and peers know to not take their life and happiness for granted because we are in a country that is better than most when it comes to living conditions.
+The motivation behind these questions is that we wanted to find the if the variables we chose are good indicators or not. Does having more material and living in a developed country produce more happiness? Moreover, we wanted our classmatess and peers know to not take their life and happiness for granted because we are in a country that is better than most when it comes to living conditions.
 
 ## Q1 How does GDP per capita of a country affect the overall Happiness Index Score: Method, Code and Conclusion
 
