@@ -24,6 +24,8 @@ https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1796590
 
 For each question, be sure to describe and discuss; the method, the code, the results and the conclusions of your group. This work will take about the same time as two labs.
 
+The motivation behind these questions is that we wanted to find the if the variables we chose are good indicators or not. Does having more material and living in a developed country produce more happiness? Moreover, we wanted out classmatess and peers know to not take their life and happiness for granted because we are in a country that is better than most when it comes to living conditions.
+
 ## Q1 How does GDP per capita of a country affect the overall Happiness Index Score: Method, Code and Conclusion
 
 ### Method: In order to see a summary of the p-values and adjusted R-squared values, we decided to run a linear regression model with all happiness index scores over all values. Here is the code:
