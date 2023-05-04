@@ -126,9 +126,7 @@ ggplot(data = some_countries , aes(x = Freedom.to.make.life.choices, y = Ladder.
 
 We found that the p-value for freedom to make life choices is 1.82e-06 , which is way below the 0.05 significance level. Thus, we concluded that this variables is statistically significant. Therefore, we reject the null hypothesis in favor of the alternate hypothesis that the Freedom.to.make.life.choices is a great variable that explains the happiness index score for the countries. As you can see the plot, we can see a straight positive correlation between in those countries.
 
-## Q3, Method, Code and Conclusion
-
-Does being more generous correlate with more happiness?
+## Q3, Does being more generous correlate with more happiness?
 
 ### Method: In order to see the correlation and the relationship, we decided to run a linear regression model and a ggplot to graph the relationship between the two variables
 
@@ -171,9 +169,7 @@ Surprisingly, we found that the p-value for generosity is 0.65 , which is way ab
 
 However, I think that it is hard to quantify generosity, and I believe the data could be faulty, but this needs more research. One would think that people who are generous would be happier, but this regression result does not conclude so.
 
-## Q4, Method, Code and Conclusion?
-
-Does a country having more social support from the government or other entities make its citizens more happy/affect the happiness index score?
+## Q4, Does a country having more social support from the government or other entities make its citizens more happy/affect the happiness index score?
 
 ### Method: In order to see the correlation and the relationship, we decided to run a linear regression model and a ggplot to graph the relationship between the two variables
 
