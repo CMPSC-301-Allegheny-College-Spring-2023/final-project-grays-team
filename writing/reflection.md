@@ -39,8 +39,7 @@ Here is the output for the regression code above:
 
 ![reg](regression.png)
 
-
-### Code: 
+### Code:
 
 We chose to graph a comparison of all countries within the dataset as well as a selection of countries based on happiness index scores to see how other variables may affect them.
 
@@ -70,14 +69,19 @@ ggplot(some_countries, aes(x = Logged.GDP.per.capita, y = Ladder.score)) +
 
 ### Result:
 
+#### All Countries
 
+<img src="../graphics/GDP-happiness-all-countries.png">
+
+#### Some countries
+
+<img src="../graphics/GDP-happiness-some-countries.png">
 
 ### Conclusion:
 
 We found that the p-value for the logged version of GDP Per capita is 0.00519, which is below the 0.05 significance level. Thus, we concluded that this variables is statisticaly significant. Therefore, we reject the null hypothesis. Moreover, the adjusted R-square value of 0.82 and as well as the graphs shows that logged GDP per capita is a good variable when it comes to determining the happiness index score of a country.
 
 ## Q2, Does having more freedom in life correlate with happiness?
-
 
 ### Method:
 
@@ -108,11 +112,15 @@ ggplot(data = some_countries , aes(x = Freedom.to.make.life.choices, y = Ladder.
 
 ```
 
+### Result:
 
+#### All Countries
 
-Result:
+<img src="../graphics/freedom-happiness-index-all-countries.png">
 
+#### Some Countries
 
+<img src="../graphics/freedom-happiness-index-some-countries.png">
 
 ### Conclusion:
 
@@ -122,9 +130,7 @@ We found that the p-value for freedom to make life choices is 1.82e-06 , which i
 
 Does being more generous correlate with more happiness?
 
-
 ### Method: In order to see the correlation and the relationship, we decided to run a linear regression model and a ggplot to graph the relationship between the two variables
-
 
 ### Code:
 
@@ -149,18 +155,21 @@ ggplot(data = data , aes(x = Generosity, y = Ladder.score)) +
   ggtitle("Correlation between Generosity and Happiness index (all countries)")
 ```
 
-
-
 ### Result:
 
+#### All Countries
 
+<img src="../graphics/generosity-happiness-index-all-countries.png">
+
+#### Some Countries
+
+<img src="../graphics/generosity-happiness-index-some-countries.png">
 
 ### Conclusion:
 
-Surprisingly, we found that the p-value for generosity is 0.65 , which is way above the 0.05 significance level. Thus, we concluded that this variables is statistically insignificant. Therefore, we accept the null hypothesis.  As you can see the plot, we can the plots are very dispersed and does not make much meaning between in those countries.
+Surprisingly, we found that the p-value for generosity is 0.65 , which is way above the 0.05 significance level. Thus, we concluded that this variables is statistically insignificant. Therefore, we accept the null hypothesis. As you can see the plot, we can the plots are very dispersed and does not make much meaning between in those countries.
 
 However, I think that it is hard to quantify generosity, and I believe the data could be faulty, but this needs more research. One would think that people who are generous would be happier, but this regression result does not conclude so.
-
 
 ## Q4, Method, Code and Conclusion?
 
@@ -168,8 +177,7 @@ Does a country having more social support from the government or other entities 
 
 ### Method: In order to see the correlation and the relationship, we decided to run a linear regression model and a ggplot to graph the relationship between the two variables
 
-### Code: 
-
+### Code:
 
 ```r
 
@@ -194,13 +202,17 @@ ggplot(data = data , aes(x = Social.support, y = Ladder.score)) +
 
 ### Result:
 
+#### All Countries
 
+<img src="../graphics/social-support-happiness-all-countries.png">
+
+#### Some Countries
+
+<img src="../graphics/social-support-happiness-some-countries.png">
 
 ### Conclusion:
 
 We found that the p-value for social support is 1.14e-10 , which is way below the 0.05 significance level. Thus, we concluded that this variable is statistically significant. Therefore, we reject the null hypothesis in favor of the alternate hypothesis that the Social.Support is a great variable that explains the happiness index score for the countries. As you can see the plot, we can see a straight positive correlation between in those countries.
-
-
 
 ---
 
